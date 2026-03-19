@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sikrit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('letter')">Letter</button>
+    <button onclick="showSection('music')">Music</button>
+    <button onclick="showSection('video')">Video</button>
+    <button onclick="showSection('question')">Question</button>
+</div>
+
+<div class="container">
+
+    <!-- HOME -->
+    <div id="home" class="section active">
+        <h1>Hi riri, i love you💖</h1>
+        <p>I made something for you… click the tabs above.</p>
+    </div>
+
+    <!-- LETTER -->
+    <div id="letter" class="section">
+        <div class="card">
+            <h2>💌 Letter</h2>
+            <p>
+               my love,
+               <br>
+               <br>
+               i may not say it well, but my heart is yours. my love for you is honest and unconditional. please dont worry about me leaving you.
+               my heart belong to you forever, babyy.
+               <br>
+               <br>
+               i'm really sorry about how you felt last night. i didn't mean to make you sad. i promise to be more
+               careful with my words and actions. and i promise to assure you everyday.
+               <br>
+               <br>
+               you know, your feelings are important to me. i care about you so much, baby i want you to feel safe with me. please don't 
+               hesitate to tell me what you feel. i will try my best to understand you better.
+<br>
+<br>
+               don't be afraid to show me all your sides.  your personality, your humor, and your weak side. you can cry on me. i can be your shoulder to cry on.
+               <br>
+               <br>
+               baby, i know i may be too fast. but i'm sure about my feelings for you.  i want to keep you forever.  i want you to be my future wife.
+               i promise to be gentle with your heart and stay by your side. i love you so much riri, now and forever more.
+            </p>
+        </div>
+    </div>
+
+    <!-- MUSIC -->
+    <div id="music" class="section">
+        <div class="card">
+            <h2>🎵 songs for u my love</h2>
+            <!-- Full MP3 -->
+            <audio controls>
+            <source src="audio/Aphroditeeee.mp3" type="audio/mpeg">
+            </audio>
+             <audio controls>
+            <source src="audio/istatyu.mp3" type="audio/mpeg">
+            </audio>
+             <audio controls>
+            <source src="audio/Buko.mp3" type="audio/mpeg">
+            </audio>
+            <p>Tap ▶ to play the full song!</p>
+        </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div id="video" class="section">
+        <div class="box">
+            <h2>🎥 Video</h2>
+            <video width="300" controls>
+                <source src="vid1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- QUESTION -->
+    <div id="question" class="section">
+        <div class="card">
+            <h2> One question...</h2>
+            <p>May I court you?
+            </p>
+
+            <button class="yes" onclick="yesAnswer()">Yes 💕</button>
+            <button class="no" id="noBtn">No 😢</button>
+
+            <p id="response"></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Flower container -->
+<div id="flowers"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
